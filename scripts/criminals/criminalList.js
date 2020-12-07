@@ -1,6 +1,7 @@
 import { getCriminals, useCriminals } from "./criminalDataProvider.js";
 import { criminal } from "./criminal.js";
 import { useConvictions } from "../convictions/convictionProvider.js";
+import { useOfficers } from "../officers/OfficerDataProvider.js";
 
 // select element being used as eventHub
 const eventHub = document.querySelector(".container");
@@ -27,8 +28,25 @@ eventHub.addEventListener("crimeChosen", (event) => {
     const matchingCriminals = criminals.filter(
       (criminal) => criminal.conviction === crime.name
     );
-
     render(matchingCriminals);
+  }
+});
+
+//listen for custom event on OfficerSelect.js of "officerThatWasChosen"
+
+eventHub.addEventListener("officerChosen", (event) => {
+  if (event.detail.officerThatWasChosen !== "0") {
+    const officers = useOfficers();
+    const officer = officers.find(
+      (officer) => officer.id === parseInt(event.detail.officerThatWasChosen)
+    );
+
+    const criminals = useCriminals();
+    const matchingCriminals = criminals.filter(
+      (criminal) => criminal.arrestingOfficer === officer.name
+    );
+    render(matchingCriminals);
+    console.log(matchingCriminals);
   }
 });
 
