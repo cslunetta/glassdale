@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+}
+
+header {
+  height: 50px;
+  background-color: #333333;
+}
+
+.filters {
+  display: flex;
+}
+
+.mainContent {
+  display: flex;
+  flex: 1;
+  overflow: auto;
+}
+
+.mainContent {
+  margin: 5px;
+}
+
+.container--left {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+}
+
+.noteFormContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 5px;
+}
+
+#noteText {
+  width: 100%;
+  height: 100px;
+}
+
+.criminalsContainer {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  height: 100%;
+  border: black solid 1px;
+  margin: 5px
+}
+
+.container--right {
+  flex: 1;
+}
+
+.noteListContainer {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 5px;
+}

@@ -6,6 +6,7 @@
     <title>Glassdale PD</title>
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/criminals.css">
+    <link rel="stylesheet" href="./styles/notes.css">
 </head>
 
 <body>
@@ -18,8 +19,19 @@
                 <div class="filter filters__officer"></div>
             </div>
         </header>
-        <article class="noteFormContainer"></article>
-        <article class="criminalsContainer"></article>
+        <div class="mainContent">
+            <div class="container--left">
+                <article class="noteFormContainer"></article>
+                <article class="criminalsContainer"></article>
+            </div>
+                <!-- notes view -->
+            <div class="container--right">    
+                <aside class="noteListContainer">
+                    <div class="noteListButton"></div>
+                    <article class="noteList"></article>
+                </aside>
+            </div>
+        </div>
     </main>
 
     <script type="module" src="./scripts/main.js"></script>

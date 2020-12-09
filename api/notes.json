@@ -1,11 +1,25 @@
 {
   "notes": [
     {
-      "noteAuthor": "Christopher Lunetta",
-      "noteSuspect": "Jordane West",
-      "noteText": "Court date set Jan 15th",
-      "date": 1607380127054,
+      "author": "Christopher Lunetta",
+      "suspect": "Jordane West",
+      "text": "Court date set Jan 15th",
+      "timestamp": 1607380127054,
       "id": 1
+    },
+    {
+      "author": "Test",
+      "suspect": "test",
+      "text": "test",
+      "timestamp": 1607459582918,
+      "id": 2
+    },
+    {
+      "author": "Christopher Lunetta",
+      "suspect": "Michel Stamm",
+      "text": "Attacked an officer at random while waiting for his Coffee.",
+      "date": 1607532665975,
+      "id": 3
     }
   ]
 }
