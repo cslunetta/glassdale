@@ -7,7 +7,7 @@ const render = () => {
   contentTarget.innerHTML = `
     <input type="text" id="noteAuthor" placeholder="Author">
     <input type="suspect" id="noteSuspect" placeholder="Suspect">
-    <textarea id="noteText" placeholder="Add note here..." col="300"></textarea>
+    <textarea id="noteText" placeholder="Add note here..."></textarea>
     <button id="saveNote">Save Note</button>
   `;
 };
@@ -18,9 +18,9 @@ eventHub.addEventListener("click", (clickEvent) => {
     let noteSuspect = document.querySelector("#noteSuspect").value;
     let noteText = document.querySelector("#noteText").value;
     const newNote = {
-      noteAuthor: noteAuthor,
-      noteSuspect: noteSuspect,
-      noteText: noteText,
+      author: noteAuthor,
+      suspect: noteSuspect,
+      text: noteText,
       date: Date.now(),
     };
     saveNote(newNote);
