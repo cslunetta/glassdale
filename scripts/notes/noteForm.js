@@ -21,7 +21,7 @@ eventHub.addEventListener("click", (clickEvent) => {
       author: noteAuthor,
       suspect: noteSuspect,
       text: noteText,
-      date: Date.now(),
+      timestamp: Date.now(),
     };
     saveNote(newNote);
   }
