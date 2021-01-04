@@ -1,3 +1,46 @@
 .note {
-  border: black solid 3px;
+  border: black solid 1px;
+  margin: 5px;
+}
+
+/* Form */
+.noteFormContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 5px;
+}
+
+#noteText {
+  width: 100%;
+  height: 100px;
+}
+
+/* sidebar listing */
+.noteListContainer {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 5px;
+}
+
+.noteList {
+  border: solid black 1px;
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  overflow-y: auto;
+  margin: 5px;
+}
+
+.alibiList {
+  border: solid black 1px;
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  overflow-y: auto;
+  margin: 5px;
+}
+
+.noteListButton {
+  display: flex;
 }

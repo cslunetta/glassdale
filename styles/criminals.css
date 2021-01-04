@@ -1,8 +1,12 @@
 .criminalsContainer {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
+  overflow-y: auto;
+  height: 100%;
+  border: black solid 1px;
+  margin: 5px
 }
 
 .criminal {

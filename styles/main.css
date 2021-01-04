@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 .container {
   display: flex;
   flex-flow: column;
@@ -15,11 +19,7 @@ header {
 
 .mainContent {
   display: flex;
-  flex: 1;
   overflow: auto;
-}
-
-.mainContent {
   margin: 5px;
 }
 
@@ -29,32 +29,12 @@ header {
   flex: 3;
 }
 
-.noteFormContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  margin: 5px;
-}
-
-#noteText {
-  width: 100%;
-  height: 100px;
-}
-
-.criminalsContainer {
-  flex: 1 1 auto;
-  overflow-y: auto;
-  height: 100%;
-  border: black solid 1px;
-  margin: 5px
-}
-
 .container--right {
   flex: 1;
 }
 
-.noteListContainer {
-  display: flex;
-  flex-direction: column-reverse;
+.alibiCard {
+  border: black solid 1px;
   margin: 5px;
+  padding: 0 5px 5px;
 }
