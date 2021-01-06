@@ -6,7 +6,7 @@ import { ShowNoteButton } from "./notes/showNotesButton.js";
 import "./notes/noteList.js";
 import "./criminals/associateAlibis/alibisButton.js";
 import "./criminals/associateAlibis/alibiList.js";
-import { showWitnessButton } from "./witnesses/witnessView.js";
+import "./witnesses/witnessView.js";
 import "./witnesses/witnessList.js";
 import "./criminals/criminalView.js"
 
@@ -15,4 +15,3 @@ convictionSelect();
 officerSelect();
 noteForm();
 ShowNoteButton();
-showWitnessButton();
