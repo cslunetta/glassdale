@@ -13,7 +13,10 @@ export const criminalList = () => {
   getCriminals().then(() => {
     let perps = useCriminals();
     render(perps);
-    showWitnessElement.innerHTML = `<button id="witnessView">Show Witnesses</button>`
+    showWitnessElement.innerHTML = `
+    <h1>Criminals</h1>
+    <button id="witnessView">Witnesses Statements</button>
+    `
   });
 };
 

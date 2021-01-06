@@ -7,7 +7,3 @@ eventHub.addEventListener("click", (clickEvent) => {
     eventHub.dispatchEvent(customEvent);
   }
 });
-
-export const showWitnessButton = () => {
-  contentTarget.innerHTML = `<button id="witnessView">Show Witnesses</button>`;
-};

@@ -14,7 +14,10 @@ const witnessList = () => {
   getWitnesses().then(() => {
     const witnesses = useWitnesses();
     render(witnesses);
-    showCriminalElement.innerHTML = `<button id="criminalView">Show Criminals</button>`
+    showCriminalElement.innerHTML = `
+    <h1>Witness Statements</h1>
+    <button id="criminalView">Show Criminals</button>
+    `
   });
 };
 
