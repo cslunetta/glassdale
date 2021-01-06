@@ -6,14 +6,21 @@ import { useOfficers } from "../officers/OfficerDataProvider.js";
 // select element being used as eventHub
 const eventHub = document.querySelector(".container");
 const criminalElement = document.querySelector(".criminalsContainer");
+const showWitnessElement = document.querySelector(".viewSelectorContainer");
 
 //Render ALL criminals initally
 export const criminalList = () => {
   getCriminals().then(() => {
     let perps = useCriminals();
     render(perps);
+    showWitnessElement.innerHTML = `<button id="witnessView">Show Witnesses</button>`
   });
 };
+
+//If witnesses are showing clicking button renders Criminals again.
+eventHub.addEventListener("showCriminalsClicked", (event) => {
+  criminalList();
+});
 
 //listen for custom event on convictionSelect.js of "crimeThatWasChosen"
 eventHub.addEventListener("crimeChosen", (event) => {
