@@ -30,15 +30,17 @@ export const convictionSelect = () => {
 const render = (convictionsCollection) => {
   //use .map() to iterate through array of convictions and give options elemements for dropdown
   contentTarget.innerHTML = `
-    <select class="dropdown" id="crimeSelect">
-      <option value="0">Please select a crime...</option>
-        ${convictionsCollection.map(
-          (crime) => `
-            <option value="${crime.id}">
-              ${crime.name}
-            </option>
-          `
-        )}
-    </select>
+    <fieldset class="select__crimeSelect">
+      <select class="dropdown" id="crimeSelect">
+        <option value="0">Please select a crime...</option>
+          ${convictionsCollection.map(
+            (crime) => `
+              <option value="${crime.id}">
+                ${crime.name}
+              </option>
+            `
+          )}
+      </select>
+    </fieldset>
   `;
 };
