@@ -33,8 +33,9 @@ export const officerSelect = () => {
 const render = (officersCollection) => {
   contentTarget.innerHTML = `
     <fieldset class="select__officerSelect">
+      <label for="officerSelect">Officers: </label>
       <select class="dropdown" id="officerSelect">
-        <option value="0">Please select an officer...</option>
+        <option value="0">All</option>
         ${officersCollection.map(
           (officer) => `
           <option value="${officer.id}">
