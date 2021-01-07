@@ -2,52 +2,45 @@
   "notes": [
     {
       "author": "Christopher Lunetta",
-      "suspect": "Jordane West",
+      "criminalId": 5,
       "text": "Court date set Jan 15th",
       "timestamp": 1607380127054,
       "id": 1
     },
     {
-      "author": "Test",
-      "suspect": "test",
-      "text": "test",
-      "timestamp": 1607459582918,
+      "author": "Christopher Lunetta",
+      "criminalId": 4,
+      "text": "Attacked an officer at random while waiting for his Coffee.",
+      "timestamp": 1607532665975,
       "id": 2
     },
     {
       "author": "Christopher Lunetta",
-      "suspect": "Michel Stamm",
-      "text": "Attacked an officer at random while waiting for his Coffee.",
-      "timestamp": 1607532665975,
+      "criminalId": 9,
+      "text": "Only crime so far is listening to rap music while fixing someone's toilet.",
+      "timestamp": 1607574783245,
       "id": 3
     },
     {
       "author": "Christopher Lunetta",
-      "suspect": "Ashlynn Buckridge",
-      "text": "Only crime so far is listening to rap music while fixing someone's toilet.",
-      "timestamp": 1607574783245,
+      "criminalId": 10,
+      "text": "Some of the alibis given Seem a little too ridiculous to be true.",
+      "timestamp": 1607574830131,
       "id": 4
     },
     {
       "author": "Christopher Lunetta",
-      "suspect": "Jennie Koepp",
-      "text": "Some of the alibis given Seem a little too ridiculous to be true.",
-      "timestamp": 1607574830131,
+      "criminalId": 10,
+      "text": "Flying over Texas and walking water Buffalo in the same day seems odd.\n",
+      "timestamp": 1607574884550,
       "id": 5
     },
     {
       "author": "Christopher Lunetta",
-      "suspect": "Jennie Koepp",
-      "text": "Flying over Texas and walking water Buffalo in the same day seems odd.\n",
-      "timestamp": 1607574884550,
-      "id": 6
-    },
-    {
-      "author": "Christopher Lunetta",
-      "suspect": "Alek Hane",
+      "criminalId": 39,
       "text": "Alibi Notes that he was disposing of body bags. seek warrant and bring in for questioning.",
       "timestamp": 1607575305540,
-      "id": 7
+      "id": 6
     }
   ]
 }
