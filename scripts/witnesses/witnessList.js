@@ -26,5 +26,6 @@ const render = (witnesses) => {
   showCriminalElement.innerHTML = `
   <h1>Witness Statements</h1>
   <button id="criminalView">Show Criminals</button>
+  <button id="facilityView">Facilities</button>
   `
 };
