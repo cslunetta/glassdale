@@ -111,5 +111,6 @@ const render = (criminalsToRender, allFacilities, allRelationships) => {
   showWitnessElement.innerHTML = `
     <h1>Criminals</h1>
     <button id="witnessView">Witnesses Statements</button>
+    <button id="facilityView">Facilities</button>
   `;
 };

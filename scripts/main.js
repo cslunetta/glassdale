@@ -9,6 +9,8 @@ import "./criminals/associateAlibis/alibiList.js";
 import "./witnesses/witnessView.js";
 import "./witnesses/witnessList.js";
 import "./criminals/criminalView.js"
+import "./facility/facilitiesList.js"
+import "./facility/facilitiesView.js"
 
 criminalList();
 convictionSelect();
