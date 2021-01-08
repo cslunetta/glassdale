@@ -14,10 +14,6 @@ const witnessList = () => {
   getWitnesses().then(() => {
     const witnesses = useWitnesses();
     render(witnesses);
-    showCriminalElement.innerHTML = `
-    <h1>Witness Statements</h1>
-    <button id="criminalView">Show Criminals</button>
-    `
   });
 };
 
@@ -27,4 +23,8 @@ const render = (witnesses) => {
     witnessCards.push(witness(person));
   }
   witnessElement.innerHTML = witnessCards.join("");
+  showCriminalElement.innerHTML = `
+  <h1>Witness Statements</h1>
+  <button id="criminalView">Show Criminals</button>
+  `
 };

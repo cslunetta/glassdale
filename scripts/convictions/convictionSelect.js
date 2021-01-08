@@ -31,8 +31,9 @@ const render = (convictionsCollection) => {
   //use .map() to iterate through array of convictions and give options elemements for dropdown
   contentTarget.innerHTML = `
     <fieldset class="select__crimeSelect">
+      <label for="crimeSelect">Crimes: </label>
       <select class="dropdown" id="crimeSelect">
-        <option value="0">Please select a crime...</option>
+        <option value="0">All</option>
           ${convictionsCollection.map(
             (crime) => `
               <option value="${crime.id}">
