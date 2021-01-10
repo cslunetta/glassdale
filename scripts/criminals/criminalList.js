@@ -10,6 +10,7 @@ import {
   getCriminalFacilities,
   useCriminalFacilities,
 } from "../facility/criminalFacilityProvider.js";
+import { AssociatesDialog } from "./associateAlibis/alibiList.js";
 
 // select element being used as eventHub
 const eventHub = document.querySelector(".container");
@@ -112,5 +113,6 @@ const render = (criminalsToRender, allFacilities, allRelationships) => {
     <h1>Criminals</h1>
     <button id="witnessView">Witnesses Statements</button>
     <button id="facilityView">Facilities</button>
+    ${AssociatesDialog()}
   `;
 };
