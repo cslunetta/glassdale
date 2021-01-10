@@ -25,7 +25,7 @@ eventHub.addEventListener("click", (clickEvent) => {
 
 const render = () => {
   const criminalsCollection = useCriminals();
-  contentTarget.innerHTML = `
+  contentTarget.innerHTML += `
     <input type="text" id="noteAuthor" placeholder="Author">
     <select id="noteForm--criminal" class="criminalSelect">
       <option value="0">Please select a suspect...</option>
@@ -33,7 +33,7 @@ const render = () => {
         (criminal) => `
           <option value="${criminal.id}">${criminal.name}</option>
         `
-      )}
+      ).join("")}
     </select>
     <textarea id="noteText" placeholder="Add note here..."></textarea>
     <button id="saveNote">Save Note</button>

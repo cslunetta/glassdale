@@ -9,7 +9,6 @@ contentTarget.addEventListener("change", (event) => {
   //if crimeSelect is changed
   if (event.target.id === "crimeSelect") {
     //custom event
-    console.log(event.target.value)
     const customEvent = new CustomEvent("crimeChosen", {
       detail: {
         crimeThatWasChosen: event.target.value,

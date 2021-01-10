@@ -9,7 +9,6 @@ contentTarget.addEventListener("change", (event) => {
   if (event.target.id === "officerSelect") {
     // custom event
     // used to target officer chosen from the event
-    console.log(event.target.value);
     const customEvent = new CustomEvent("officerChosen", {
       detail: {
         officerThatWasChosen: event.target.value,
@@ -33,7 +32,7 @@ export const officerSelect = () => {
 const render = (officersCollection) => {
   contentTarget.innerHTML = `
     <fieldset class="select__officerSelect">
-      <label for="officerSelect">Officers: </label>
+      <label for="officerSelect">Arresting Officer: </label>
       <select class="dropdown" id="officerSelect">
         <option value="0">All</option>
         ${officersCollection.map(
@@ -42,7 +41,7 @@ const render = (officersCollection) => {
             ${officer.name}
           </option>
         `
-        )}
+        ).join()}
       </select>
     </fieldset>
         `;
