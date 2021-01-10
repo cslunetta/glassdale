@@ -10,6 +10,12 @@ body {
 
 header {
   background-color: #333333;
+  height: 75px;
+  text-align: center;
+}
+
+header > img {
+  height: inherit;
 }
 
 .filters {
@@ -19,7 +25,8 @@ header {
 .mainContent {
   display: flex;
   overflow: auto;
-  margin: 5px;
+  /* padding: 5px; */
+  /* height: auto; */
 }
 
 .container--left {
@@ -30,10 +37,25 @@ header {
 
 .container--right {
   flex: 1;
+  /* height: 100%; */
+  /* padding: 5px; */
 }
 
 .alibiCard {
   border: black solid 1px;
   margin: 5px;
   padding: 0 5px 5px;
+}
+
+
+button#witnessView {
+  margin: 5px;
+}
+
+button#facilityView {
+  margin: 5px;
+}
+
+h1 {
+  margin: 5px;
 }

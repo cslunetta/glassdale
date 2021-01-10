@@ -1,46 +1,54 @@
-.note {
-  border: black solid 1px;
-  margin: 5px;
-}
-
 /* Form */
 .noteFormContainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  margin: 5px;
+  /* justify-content: flex-start; */
+  /* margin: 10px; */
+  /* height: 20vh; */
 }
 
 #noteText {
   width: 100%;
   height: 100px;
-}
-
-/* sidebar listing */
-.noteListContainer {
-  display: flex;
-  flex-direction: column-reverse;
-  margin: 5px;
-}
-
-.noteList {
-  border: solid black 1px;
-  display: flex;
-  flex-direction: column;
-  height: 450px;
-  overflow-y: auto;
-  margin: 5px;
-}
-
-.alibiList {
-  border: solid black 1px;
-  display: flex;
-  flex-direction: column;
-  height: 450px;
-  overflow-y: auto;
   margin: 5px;
 }
 
 .noteListButton {
+  /* display: flex; */
+  order: 1;
+  margin: 5px;
+}
+
+/* Notes when Shown */
+.noteListContainer {
   display: flex;
+  /* flex-direction: column; */
+  height: 70vh;
+}
+
+.noteList {
+  /* display: flex; */
+  /* flex-direction: column; */
+  overflow-y: auto;
+  margin: 0px;
+  /* height: 36vh; */
+}
+
+.note {
+  border: black solid 1px;
+  margin: 5px;
+  padding: 5px;
+}
+
+
+#noteAuthor {
+  margin: 5px;
+}
+
+#noteForm--criminal {
+  margin: 5px;
+}
+
+button#saveNote {
+  margin: 5px;
 }
